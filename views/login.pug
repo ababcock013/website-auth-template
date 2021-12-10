@@ -1,0 +1,17 @@
+doctype
+html(lang='en')
+    head
+        meta(charset='utf-8')
+        title
+        style 
+            include style.css 
+
+    body
+        form(action='#' method='method')
+            .form-group
+                label(for='email') Email
+                input.form-control(type='email' name='email' placeholder='Email' autofocus=true)
+            .form-group
+                label(for='password') Password
+                input.form-control(type='password' name='{:password}')
+            button.btn.btn-primary(type='submit') Log-in
